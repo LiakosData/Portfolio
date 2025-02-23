@@ -11,16 +11,22 @@
         }
     </script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+            body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;  /* Light background for light mode */
+    background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background 0.3s ease-in-out;
+}
+
+        
         .dark-mode {
-            background-color: #121212;
-            color: #fff;
-        }
+    background-color: #1e1e1e;  /* Dark mode background */
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); 
+}
+
         .section {
             padding: 20px;
             margin: 20px auto;
