@@ -7,105 +7,111 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
         .container {
-            max-width: 1200px;
+            width: 80%;
             margin: auto;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        .header img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-        .content {
+        .project-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            flex-wrap: wrap;
         }
-        .side-bar {
-            width: 15%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        .side-bar img {
-            width: 80px;
-            height: auto;
-        }
-        .portfolio-content {
-            width: 70%;
+        .image-container {
+            width: 40%;
             text-align: center;
         }
-        .portfolio-content img {
+        .image-container img {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
+            border-radius: 8px;
         }
-        .contact {
-            margin-top: 40px;
+        .icon {
+            width: 100px;
+            margin-top: 10px;
+        }
+        .content {
+            width: 50%;
+            text-align: left;
+        }
+        a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHdIzRqnz7fkA/profile-displayphoto-shrink_800_800/B4DZUJBUPyG4Ac-/0/1739613095578?e=1746057600&v=beta&t=-LtRmX0Bneh-OkiOu8stBSnMeS9e6YXQtOvTVD2lHck" alt="Profile Photo">
-            <h1>Ilias Roufogalis</h1>
-        </div>
-        <p>I am a self-taught Data Analyst with a passion for solving real-world problems.<br>
-        Really interested in statistical analysis, ML & AI.<br>
-        Embarked on a life-long learning journey, improving every day.<br>
-        Looking for my first opportunity to apply my knowledge in a professional setting.</p>
+
+<header>
+    <h1>Ilias Roufogalis</h1>
+    <p>Self-taught Data Analyst passionate about solving real-world problems</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ilias-roufogalis-320025347/" target="_blank">LinkedIn</a> | 
+        <a href="mailto:your.email@example.com">Email</a> | 
+        <a href="your_resume_link_here.pdf" target="_blank">Resume</a>
+    </p>
+</header>
+
+<div class="container">
+
+    <!-- Power BI Projects -->
+    <div class="section">
+        <h2>Power BI Dashboards</h2>
+        <h3>Supermarket Sales Dashboard</h3>
+        <img src="https://raw.githubusercontent.com/LiakosData/Portfolio-/refs/heads/main/SuperMarket%20Sales.png" width="80%">
         
-        <div class="content">
-            <div class="side-bar">
-                <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/sql.png" alt="SQL">
-                <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/python.png" alt="Python">
-                <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="Workspace">
-            </div>
-            
-            <div class="portfolio-content">
-                <h2>Power BI Dashboards</h2>
-                <h3>Supermarket Sales Analysis</h3>
-                <img src="https://raw.githubusercontent.com/LiakosData/Portfolio-/refs/heads/main/SuperMarket%20Sales.png" alt="Supermarket Sales Dashboard">
-                <h3>Stock Analysis Report</h3>
-                <img src="https://raw.githubusercontent.com/LiakosData/Portfolio-/refs/heads/main/Stock_Analysis/Price%20Changes%20%26%20Correlation.png" alt="Stock Analysis Page 1">
-                <img src="https://raw.githubusercontent.com/LiakosData/Portfolio-/refs/heads/main/Stock_Analysis/Volume%20%26%20STD.png" alt="Stock Analysis Page 2">
-                <img src="https://raw.githubusercontent.com/LiakosData/Portfolio-/refs/heads/main/Stock_Analysis/YoY%20Growth.png" alt="Stock Analysis Page 3">
-                
-                <h2>Python & Jupyter Notebook</h2>
-                <p><a href="https://nbviewer.org/github/LiakosData/Stocks_Analysis/blob/main/Python/Stocks_Analysis.ipynb" target="_blank">View Jupyter Notebook</a></p>
-                <p>Stock Analysis using Python for data cleaning, key metric calculation (MA, RSI, Volatility), statistical correlation analysis, and visualization of trends.</p>
-            </div>
-            
-            <div class="side-bar">
-                <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/joshua-aragon-BMnhuwFYr7w-unsplash.jpg" alt="Coding Workspace">
-            </div>
-        </div>
+        <h3>Stock Market Analysis Report</h3>
+        <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/Stock_Analysis/Price%20Changes%20%26%20Correlation.png" width="80%">
+        <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/Stock_Analysis/Volume%20%26%20STD.png" width="80%">
+        <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/Stock_Analysis/YoY%20Growth.png" width="80%">
+    </div>
+
+    <!-- Python Project -->
+    <div class="section">
+        <h2>Python Stock Analysis</h2>
+        <p>This project analyzes stock market data for six major stocks (AAPL, AMZN, NVDA, TSLA, GOOG, SPY) using Python. It explores trends, volatility, and correlations.</p>
+        <p><a href="https://nbviewer.org/github/LiakosData/Stocks_Analysis/blob/main/Python/Stocks_Analysis.ipynb" target="_blank">View Full Notebook</a></p>
         
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>📧 Email: YourEmail@example.com</p>
-            <p>🔗 <a href="https://www.linkedin.com/in/ilias-roufogalis-320025347/" target="_blank">LinkedIn</a></p>
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+            <li>Pandas, Matplotlib, Seaborn, yfinance, talib</li>
+            <li>Jupyter Notebook</li>
+            <li>Data Cleaning, MA, RSI, Bollinger Bands, Correlation Analysis</li>
+        </ul>
+    </div>
+
+    <!-- Side Images and Icons -->
+    <div class="project-container">
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg">
+            <img class="icon" src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/sql.png">
+        </div>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/joshua-aragon-BMnhuwFYr7w-unsplash.jpg">
+            <img class="icon" src="https://raw.githubusercontent.com/LiakosData/Stocks_Analysis/refs/heads/main/python.png">
         </div>
     </div>
+
+</div>
+
 </body>
 </html>
